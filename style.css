@@ -1,0 +1,320 @@
+﻿/*
+Theme Name: sample
+*/
+
+/* 特定のページのスタイルを設定 */
+.page header{
+      background-color: #0c0;
+  }
+
+.page-id-15 header{ 
+    background-color: #0F0;
+}  
+  
+a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+a:hover{
+  color: brown;
+  background-color: trancpearent;
+  text-decoration: none;
+  border-bottom: 1px #0000FF solid;
+}
+
+.islink {
+  text-decoration: none;
+  border-bottom: 1px #0000FF solid;
+}
+
+body {
+    width:900px;
+    margin:20px auto;
+}
+
+
+body.page-template-default{
+  background-image: url("http://agri.makejapan.jp/wp-content/uploads/2017/10/bgptnred-1.jpg");
+  background-repeat: repeat;
+  width: 660px;
+}
+//  background-color: rgba(255,255,255,0.1);
+
+header, main, aside, footer{
+    display:block;
+}
+
+header, main, aside, footer {
+    margin:0px 0px 10px 0px;
+    padding:20px;
+}
+
+header {
+    text-align:center;
+}
+
+div#nav ul   {
+              background-color: #000000;
+              padding: 8px 0;
+              margin: 0 0 20px
+}
+
+div#nav li a {
+              font-size: 1em;
+              color: #ffffff;
+              text-decoration: none
+}
+              
+div#nav    a:hover { color: #ffaa00}
+
+div#nav li   {
+              display: inline;
+              list-style-type: none;
+              border-right: solid 1px #ffffff;
+              padding-left: 15px;
+              padding-right: 15px
+}
+
+/*記事*/
+div.post     {
+             border: solid 1px #0c8bcd;
+             padding: 10px;
+             background: #fff;
+             margin-bottom: 10px
+}
+
+div.clearLeft {
+            clear: left;
+}
+
+div.leftVerticalLine {
+  border-left: solid 10px #99c399;
+  border-right: solid 1px #ccc;
+  font-size: 1.0em;
+  padding: 10px 0 10px 20px;
+  margin: 8px 0;
+  color: #555;
+  border-top: solid 1px #ccc;
+  border-bottom: solid 1px #ccc;
+}
+
+div.leftVerticalLineYellow {
+  border-left: solid 10px #f49e42;
+  font-size: 1.2em;
+  font-weght: bolder;
+  padding: 5px 0 5px 5px;
+  margin: 8px 0;
+}
+
+
+div.akawaku {
+  border-left: solid 1px #ff0000;
+  border-right: solid 1px #f00;
+  font-size: 1.0em;
+  padding: 10px 0 10px 20px;
+  margin: 8px 0;
+  color: #f00;
+  border-top: solid 1px #f00;
+  border-bottom: solid 1px #f00;
+}
+
+
+aside {
+       border: solid 0px #ccc;
+       float:right;
+       width:180px;
+}
+
+.sidebar-wrapper {
+    margin:10px 10px 10px 10px;
+}
+
+.sidebar-title {
+  border-left: solid 10px #99c348;
+  font-size: 1.2em;
+  padding: 10px 0 10px 20px;
+  margin: 8px 0;
+  color: #555;
+  border-top: solid 1px #ccc;
+  border-bottom: solid 1px #ccc;
+}
+
+.textwidget {
+  padding: 0 8px;
+}
+
+
+/* ページリンク */
+span.oldpage  {float: left}
+span.newpage  {float:right}
+p.pagelink a {font-size: 0.75em;
+              color: #0c8bcd;}
+
+p.pagelink    {coverflow: hidden;
+                with: 100%}
+
+
+main {
+      float:left;
+      width:625px;
+}
+
+
+footer {
+        clear:both;
+        text-align: center;
+        padding: 10px;
+}
+
+.slides {
+position: relative;
+top: 0;
+left: 50%;
+overflow: hidden;
+width: 100%;
+height: 350px;
+-webkit-transform: translateX(-50%);
+transform: translateX(-50%);
+}
+
+#slider-area {
+position: relative;
+margin-bottom: 50px;
+}
+.slides-inner {
+position: relative;
+top: 0;
+width: 100%;
+}
+
+.slidekiji {
+position: absolute;
+display: block;
+width: 100%;
+height: auto;
+}
+
+.slidekiji img {
+width: 100%;
+height: 350px;
+object-fit: cover;
+}
+
+.slidekiji .text {
+position: absolute;
+top: 170px;
+box-sizing: border-box;
+width: 100%;
+padding: 0 30px;
+padding-top: 70px;
+padding-bottom: 50px;
+background: linear-gradient(top, rgba(255, 255, 255, 0) 2%, #000 100%);
+background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 2%, #000 100%);
+background: -moz-linear-gradient(top, #969696 2%, #000 100%);
+text-shadow: 0 0 3px #000;
+-moz-text-shadow: 0 0 3px #000;
+-webkit-text-shadow: 0 0 3px #000;
+}
+
+.slidekiji .kiji-date {
+font-size: 1em;
+color: #fff;
+}
+
+.slidekiji .cat-data {
+font-size: 1em;
+color: #fff;
+background-color: transparent;
+}
+
+.slidekiji h2 {
+font-size: 1.6em;
+margin: 0;
+color: #fff;
+}
+
+#pager {
+position: absolute;
+top: 50%;
+left: 50%;
+width: 100%;
+margin: 0;
+padding: 0;
+list-style: none;
+-webkit-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+}
+
+#pager .prev, #pager .next {
+line-height: 40px;
+position: absolute;
+top: 0;
+width: 44px;
+height: 40px;
+-webkit-transform: translateY(-50%);
+transform: translateY(-50%);
+text-align: center;
+text-decoration: none;
+color: #fff;
+background: #333;
+}
+
+#pager .prev {
+left: 0;
+}
+
+#pager .next {
+right: 0;
+}
+
+.slides-nav {
+position: absolute;
+bottom: -35px;
+left: 0;
+width: 100%;
+text-align: center;
+}
+
+.slides-nav a {
+display: inline-block;
+width: 12px;
+height: 12px;
+margin: 0 5px;
+border-radius: 50%;
+background: #ccc;
+}
+
+.slides-nav a.active {
+cursor: default;
+background: #333;
+}
+
+@media (max-width: 799px) {
+    .slides {
+    height: 240px;
+    }
+    .slide-img {
+    height: 240px;
+    }
+    .slidekiji h2 {
+    font-size: 1.3em;
+    }
+    .slidekiji .cat-data, .slidekiji .kiji-date {
+    font-size: .9em;
+    }
+    .slidekiji .text {
+    top: 75px;
+    padding-bottom: 35px;
+    }
+    #pager .prev, #pager .next {
+    line-height: 8vw;
+    width: 8vw;
+    height: 8vw;
+    }
+    .slides-nav a {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    }
+}
