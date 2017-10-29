@@ -10,7 +10,11 @@ Theme Name: sample
 .page-id-15 header{ 
     background-color: #0F0;
 }  
-  
+
+.page-id-337 header{ 
+    background-color: #b5e7a0;
+}  
+
 a {
   color: #0073e6;
   text-decoration: none;
