@@ -9,36 +9,24 @@
     <p><?php the_category(', '); ?></p>
 	<?php the_post_thumbnail(); ?>
 	
-	<?php if(get_post_meta($post->ID, 'book_label', true)): ?>
-
-    <i class="best <?php echo get_post_meta($post->ID, 'book_label', true); ?>"></i>
-	<h3><font color='blue'>** ベストセラーになっています **</font></h3>
-		<!--題名の出力方法-->
-		<h2><?php echo get_post_meta($post->ID, 'book_name', true); ?></h2>
-		 
-		<!--作者の出力方法-->
-		<p><?php echo '作者： '; echo get_post_meta($post->ID, 'book_author', true); ?></p>
-		 
-		<!--価格の出力方法-->
-		<span><?php echo get_post_meta($post->ID, 'book_price', true); echo'円'; ?></span>
-	   
-	  <!--ベストセラーラベルの出力結果例-->
-	  <i class="best is-on"></i>
+	  <?php $cat = get_the_category(); $cat_name = $cat[0]->name; ?>
 	
-	<?php else: ?>
-	  <!--題名の出力方法-->
-	  <h2><?php echo get_post_meta($post->ID, 'book_name', true); ?></h2>
-	   
-	  <!--作者の出力方法-->
-	  <p><?php echo '作者： '; echo get_post_meta($post->ID, 'book_author', true); ?></p>
-	   
-	  <!--価格の出力方法-->
-	  <span><?php echo get_post_meta($post->ID, 'book_price', true); echo'円'; ?></span>
+	  <?php if( $cat_name =='価格' || $cat_name =='本' ): ?>
 
-	  <i class="best is-on"></i>
-	
-  <?php endif; ?>
+		<i class="best <?php echo get_post_meta($post->ID, 'book_label', true); ?>"></i>
   
+		      <?php if(get_post_meta($post->ID, 'book_label', true)): ?>
+				<h3><font color='blue'>** ベストセラーになっています **</font></h3>
+        	    <?php show_book( $post->ID ); ?>
+
+    	  	<?php else: ?>
+
+            	<?php show_book( $post->ID ); ?>
+
+		  <?php endif; ?>
+
+	  <?php endif; ?>
+
 	
 	  <p><?php the_content('Read more'); ?></p>
       <div class ="clearLeft">
@@ -54,7 +42,19 @@
   
 </main>
 
-
 <?php get_sidebar(); ?>
 
 <?php get_footer(); ?>
+
+
+<?php
+function show_book( $p )
+{
+    //--題名の出力方法
+    echo "<h2>".get_post_meta($p, 'book_name', true)."</h2>";
+    //--作者の出力方法
+    echo "<p>作者： ".get_post_meta($p, 'book_author', true)."</p>";
+    //---価格の出力方法
+    echo "<span>".get_post_meta($p, 'book_price', true).'円'."</span>";
+    echo "<i class='best is-on'></i>";
+}
