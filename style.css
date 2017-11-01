@@ -2,9 +2,19 @@
 Theme Name: sample
 */
 
+
+.marker_yellow_futo {
+background: linear-gradient(transparent 0%, #ffff66 0%);
+}
+
+.marker_yellow_hoso {
+background: linear-gradient(transparent 60%, #ffff66 60%);
+}
+
 /* 特定のページのスタイルを設定 */
+
 .page header{
-      background-color: #0c0;
+      background-color: #F79F81;
   }
 
 .page-id-15 header{ 
@@ -83,7 +93,7 @@ div#nav li   {
 /*記事*/
 div.post     {
              border: solid 1px #0c8bcd;
-             padding: 10px;
+             padding: 16px;
              background: #fff;
              margin-bottom: 10px
 }
