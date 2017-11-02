@@ -1,8 +1,18 @@
 <?php get_header('withimg'); ?>
 
-<main>
+<div id="search-box">
+<form method="get" action="<?php bloginfo( 'url' ); ?>">
+<table><td><input name="s" id="s" type="text" />
+  <input id="submit" type="submit" value="検索" /></td>
+  <td><a href ="http://agri.makejapan.jp/wp-admin">サイト管理</a></td>
+</table>  
+</form>
+</div
 
-<p>（情報）page.phpテンプレートで表示されています。</p>
+
+
+  
+<main>
   
 <?php if(have_posts()): while(have_posts()):the_post(); ?>
   <div class="post">  

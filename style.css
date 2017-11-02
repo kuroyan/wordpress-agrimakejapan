@@ -1,18 +1,28 @@
 ﻿/*
 Theme Name: sample
+date: 2017.11.01
 */
 
+table {
+    border-collapse: collapse;
+}
 
+#search-box	{
+    align: right;
+    margin:10px 10px 0px 0px;
+    padding:5px;
+}
+
+/* for short code */
 .marker_yellow_futo {
 background: linear-gradient(transparent 0%, #ffff66 0%);
 }
-
+/* for short code */
 .marker_yellow_hoso {
 background: linear-gradient(transparent 60%, #ffff66 60%);
 }
 
 /* 特定のページのスタイルを設定 */
-
 .page header{
       background-color: #F79F81;
   }
@@ -102,6 +112,7 @@ div.clearLeft {
             clear: left;
 }
 
+/* for short code */
 div.leftVerticalLine {
   border-left: solid 10px #99c399;
   border-right: solid 1px #ccc;
@@ -112,7 +123,7 @@ div.leftVerticalLine {
   border-top: solid 1px #ccc;
   border-bottom: solid 1px #ccc;
 }
-
+/* for short code */
 div.leftVerticalLineYellow {
   border-left: solid 10px #f49e42;
   font-size: 1.2em;
@@ -120,8 +131,7 @@ div.leftVerticalLineYellow {
   padding: 5px 0 5px 5px;
   margin: 8px 0;
 }
-
-
+/* for short code */
 div.akawaku {
   border-left: solid 1px #ff0000;
   border-right: solid 1px #f00;
@@ -157,7 +167,6 @@ aside {
 .textwidget {
   padding: 0 8px;
 }
-
 
 /* ページリンク */
 span.oldpage  {float: left}
