@@ -3,9 +3,35 @@ Theme Name: sample
 date: 2017.11.01
 */
 
-table {
-    border-collapse: collapse;
+
+table.sasaki{
+    border: 1px #555555 solid;
+    border-spacing: 0;
+    border-collapse: collapse; //-- 細い線にするため重要
+    margin: 0 auto; 
 }
+ 
+table.sasaki th {
+    width: 80px;
+    padding: 5px;
+    border: #555555 solid;
+    border-width: 0 0 1px 1px;
+    background: #EFEFEF;
+    line-height: 120%;
+    text-align: center;
+}
+ 
+table.sasaki td {
+    padding: 6px;
+    border: 1px #555555 solid;
+    border-width: 1px 1px 1px 1px;
+    text-align: right;
+}
+
+
+//table {
+//    border-collapse: collapse;
+//}
 
 #search-box	{
     align: right;
@@ -32,8 +58,13 @@ background: linear-gradient(transparent 60%, #ffff66 60%);
 }  
 
 .page-id-337 header{ 
-    background-color: #b5e7a0;
+    background-color: transparent;
 }  
+
+.page-id-40 header{
+     background-color: transparent; 
+}
+
 
 a {
   color: #0073e6;
@@ -146,7 +177,7 @@ div.akawaku {
 
 aside {
        border: solid 0px #ccc;
-       float:right;
+       float:left;
        width:180px;
 }
 
@@ -179,7 +210,7 @@ p.pagelink    {coverflow: hidden;
 
 
 main {
-      float:left;
+      float:right;
       width:625px;
 }
 
