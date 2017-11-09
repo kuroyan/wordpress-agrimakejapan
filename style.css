@@ -181,6 +181,14 @@ aside {
        width:180px;
 }
 
+
+
+aside.right{
+       border: solid 0px #Fcc;
+       float:right;
+       width:180px;
+}
+
 .sidebar-wrapper {
     margin:10px 10px 10px 10px;
 }
@@ -213,6 +221,13 @@ main {
       float:right;
       width:625px;
 }
+
+
+main.left{
+      float:left;
+      width:625px;
+}
+
 
 
 footer {
@@ -321,6 +336,7 @@ left: 0;
 #pager .next {
 right: 0;
 }
+
 
 .slides-nav {
 position: absolute;

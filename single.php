@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main>
+<main class = "left">
 
 <?php if(have_posts()): while(have_posts()):the_post(); ?>
   <div class="post">
