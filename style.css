@@ -3,6 +3,18 @@ Theme Name: sample
 date: 2017.11.01
 */
 
+/* 画像リンクした線非表示 */
+.imglink a img{
+	vertical-align:top;
+	text-decoration:none;
+}
+
+/* 特定イメージにホーバーで透過量を変える */
+img.sample:hover {
+opacity: 0.4;
+filter: alpha(opacity=40);
+-moz-opacity:0.4;
+}
 
 table.sasaki{
     border: 1px #555555 solid;
@@ -110,7 +122,7 @@ header {
 }
 
 div#nav ul   {
-              background-color: #000000;
+              background-color: #333333;
               padding: 8px 0;
               margin: 0 0 20px
 }
@@ -126,7 +138,7 @@ div#nav    a:hover { color: #ffaa00}
 div#nav li   {
               display: inline;
               list-style-type: none;
-              border-right: solid 1px #ffffff;
+              border-right: solid 1px #ffaa00;
               padding-left: 15px;
               padding-right: 15px
 }

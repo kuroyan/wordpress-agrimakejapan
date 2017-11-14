@@ -8,7 +8,7 @@
     <time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y.m.d'); ?></time>
     <p><?php the_category(', '); ?></p>
 	<?php the_post_thumbnail(); ?>
-	
+
 	  <?php $cat = get_the_category(); $cat_name = $cat[0]->name; ?>
 	
 	  <?php if( $cat_name =='価格' || $cat_name =='本' ): ?>
@@ -31,6 +31,7 @@
 	  <p><?php the_content('Read more'); ?></p>
       <div class ="clearLeft">
       </div>
+			<?php edit_post_link('この記事を編集', '<p>', '</p>'); ?>
   </div>
 
   <?php endwhile; endif; ?>

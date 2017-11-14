@@ -27,6 +27,16 @@ register_sidebar(array(
 add_action('widgets_init', 'sample_widgets');
 
 
+register_sidebar(array(
+     'name' => 'Footer' ,
+     'id' => 'footer' ,
+     'before_widget' => '<div class="widget">',
+     'after_widget' => '</div>',
+     'before_title' => '<h3>',
+     'after_title' => '</h3>'
+));
+
+
 function leftVerticalLine($atts, $content = null) {
     return '<div class="leftVerticalLine">' . $content . '</div>';
 }
