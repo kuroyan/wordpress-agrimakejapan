@@ -3,18 +3,22 @@ Theme Name: sample
 date: 2017.11.01
 */
 
-/* 画像リンクした線非表示 */
-.imglink a img{
-	vertical-align:top;
-	text-decoration:none;
-}
-
 /* 特定イメージにホーバーで透過量を変える */
-img.sample:hover {
+img.imghov:hover {
+border-bottom: 1px #FF0000 solid;
+text-decoration: none;  
 opacity: 0.4;
 filter: alpha(opacity=40);
 -moz-opacity:0.4;
 }
+
+/* 画像リンクした線非表示 */
+.imglink {
+    border-bottom: 0px #fff0000 solid;
+	text-decoration:none;
+}
+
+
 
 table.sasaki{
     border: 1px #555555 solid;
